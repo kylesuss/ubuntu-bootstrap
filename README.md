@@ -15,10 +15,8 @@ $ curl https://raw.githubusercontent.com/kylesuss/ubuntu-bootstrap/master/module
 
 ### Specific Environments
 
-> Note that additonal -s flag and corresponding raw file path which is used in environment scripts to dynamically load modules.
+> Note that additonal -s flag on the curl command and corresponding raw file path which is used in environment scripts to dynamically load modules.
 
 ```shell
-$ sudo apt-get update
-$ sudo apt-get install curl git
 $ curl https://raw.githubusercontent.com/kylesuss/ubuntu-bootstrap/master/ruby_env.sh | bash -s https://raw.githubusercontent.com/kylesuss/ubuntu-bootstrap/master
 ```
