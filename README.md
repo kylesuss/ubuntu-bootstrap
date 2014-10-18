@@ -1,4 +1,9 @@
+![Ubuntu Bootstrap](http://i.imgur.com/a5yWkkk.png)
+
 ## Usage
+
+1. Run setup process
+2. Install either individual modules or a full environment.
 
 > Tested on Ubuntu 14.04 x64
 
