@@ -43,7 +43,7 @@ done
 
 if [ "$URL" = "" ]
 then
-  URL = DEFAULT_URL
+  URL=DEFAULT_URL
   curl $URL/modules/ruby.sh | bash
 else
   curl $URL/modules/ruby.sh | bash
