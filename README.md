@@ -3,7 +3,7 @@
 ## Usage
 
 1. Run setup process
-2. Install either individual modules or a full environment.
+2. Install either individual modules or a full environment
 
 > Tested on Ubuntu 14.04 x64
 
@@ -14,7 +14,18 @@ $ sudo apt-get update
 $ sudo apt-get --assume-yes install curl git build-essential tcl8.5
 ```
 
-### Modules
+### Available Modules
+- [x] ruby
+- [x] redis
+- [ ] postgres
+- [ ] monit
+- [ ] nginx
+
+### Installation
+
+***
+
+#### Modules
 
 To install an individual module at a time, use the following format:
 
@@ -22,7 +33,7 @@ To install an individual module at a time, use the following format:
 $ curl https://raw.githubusercontent.com/kylesuss/ubuntu-bootstrap/master/modules/<MODULE NAME>.sh | bash
 ```
 
-### Environments
+#### Environments
 
 Environment include their language module by default. In order to load additional modules, add a flag using the `--modulename` convention. 
 
@@ -43,10 +54,3 @@ Modules are generated using a default URL corresponding to the master branch on 
 ```shell
 $ curl https://raw.githubusercontent.com/kylesuss/ubuntu-bootstrap/master/ruby_env.sh | bash -s -- -url http://code.something.com/ubuntu --redis
 ```
-
-### Available Modules
-- [x] ruby
-- [x] redis
-- [ ] postgres
-- [ ] monit
-- [ ] nginx
