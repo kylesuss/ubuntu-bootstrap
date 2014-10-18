@@ -2,7 +2,6 @@
 
 URL=""
 DEFAULT_URL="https://raw.githubusercontent.com/kylesuss/ubuntu-bootstrap/master"
-REDIS=false
 
 #///////////////////////
 #// Set Variables for Args

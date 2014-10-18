@@ -8,7 +8,7 @@ echo "Installing ruby..."
 \curl -sSL https://get.rvm.io | bash -s stable
 
 # Assuming an install path of /usr/local/rvm/
-echo '[[ -s "/usr/local/rvm/" ]] && . "/usr/local/rvm/"' >> ~/.bashrc
+echo '[[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm"' >> ~/.bashrc
 source /usr/local/rvm/scripts/rvm
 
 # Get latest ruby
