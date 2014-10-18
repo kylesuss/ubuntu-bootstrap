@@ -19,12 +19,14 @@ $ curl https://raw.githubusercontent.com/kylesuss/ubuntu-bootstrap/master/module
 
 ### Environments
 
-The Ruby module is included by default.
+The ruby environment includes the ruby module by default.
 
 ```shell
 $ curl https://raw.githubusercontent.com/kylesuss/ubuntu-bootstrap/master/ruby_env.sh | bash
 ```
-In order to load additional modules, add the corresponding flag to the end of the command. Example:
+In order to load additional modules, add the corresponding flag to the end of the command. 
+
+Example:
 
 ```shell
 $ curl https://raw.githubusercontent.com/kylesuss/ubuntu-bootstrap/master/ruby_env.sh | bash -s -- --redis
@@ -38,4 +40,5 @@ $ curl https://raw.githubusercontent.com/kylesuss/ubuntu-bootstrap/master/ruby_e
 ```
 
 ### Available Modules
+* --ruby
 * --redis
