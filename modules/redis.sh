@@ -13,7 +13,7 @@ sudo apt-get --assume-yes autoremove
 #// Install
 #///////////////////////
 
-wget http://download.redis.io/releases/redis-2.8.17.tar.gz | bash
+wget --retry-connrefused --waitretry=10 http://download.redis.io/releases/redis-2.8.17.tar.gz | bash
 tar xzf redis-2.8.17.tar.gz
 cd redis-2.8.17
 make
