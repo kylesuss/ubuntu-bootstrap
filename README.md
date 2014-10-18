@@ -27,7 +27,7 @@ $ sudo apt-get --assume-yes install curl git build-essential tcl8.5
 
 #### Modules
 
-To install an individual module at a time, use the following format:
+To install one individual module at a time, use the following format:
 
 ```shell
 $ curl https://raw.githubusercontent.com/kylesuss/ubuntu-bootstrap/master/modules/<MODULE NAME>.sh | bash
@@ -35,11 +35,11 @@ $ curl https://raw.githubusercontent.com/kylesuss/ubuntu-bootstrap/master/module
 
 #### Environments
 
-Environment include their language module by default. In order to load additional modules, add a flag using the `--modulename` convention. 
+Environments include their language module by default. In order to load additional modules, add a flag using the `--modulename` convention. 
 
 **Example:**
 
-> Note that additonal `-s --` flags on the curl command which allows for passing arguments and additional flags. 
+> Note that additonal `-s --` flags on the curl command after `| bash` which allows for passing arguments and additional flags. 
 
 ```shell
 $ curl https://raw.githubusercontent.com/kylesuss/ubuntu-bootstrap/master/ruby_env.sh | bash -s -- --redis
