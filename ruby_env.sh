@@ -23,6 +23,10 @@ do
   shift
   case $key in
 
+    (-s)
+      shift
+    ;;
+
     (-url)
       URL="$1"
       shift
@@ -51,11 +55,11 @@ then
   exit 1
 else
   echo "Installing ruby..."
-  curl $URL/modules/ruby.sh | bash
+  # curl $URL/modules/ruby.sh | bash
 fi
 
 if [ "$REDIS" = true ]
 then
   echo "Installing redis..."
-  curl $REDIS/modules/redis.sh | bash
+  # curl $REDIS/modules/redis.sh | bash
 fi
