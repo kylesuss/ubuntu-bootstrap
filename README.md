@@ -49,9 +49,9 @@ $ curl https://raw.githubusercontent.com/kylesuss/ubuntu-bootstrap/master/ruby_e
 
 Modules are generated using a default URL corresponding to the master branch on this repository. If for some reason you need to change that URL, pass the -url flag with a corresponding endpoint.
 
-> Note the way environment scripts structure URLs before you pass the -url flag. `$URL/modules/<MODULE_NAME>.sh`
-
 **Example:**
+
+> Note the way environment scripts structure URLs before you pass the -url flag. `$URL/modules/<MODULE_NAME>.sh`
 
 ```shell
 $ curl https://raw.githubusercontent.com/kylesuss/ubuntu-bootstrap/master/ruby_env.sh | bash -s -- -url http://code.something.com/ubuntu --redis
