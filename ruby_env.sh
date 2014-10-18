@@ -3,16 +3,6 @@
 URL=""
 DEFAULT_URL="https://raw.githubusercontent.com/kylesuss/ubuntu-bootstrap/master"
 
-# #///////////////////////
-# #// Check Args Exist
-# #///////////////////////
-
-# if [ $# -eq 0 ]
-# then
-#   echo "A valid URL is required in order to dynamically load modules. See https://github.com/kylesuss/ubuntu-bootstrap for details."
-#   exit 1
-# fi
-
 #///////////////////////
 #// Set Variables for Args
 #///////////////////////
@@ -43,7 +33,7 @@ done
 
 if [ "$URL" = "" ]
 then
-  URL=$DEFAULT_URL
+  URL="$DEFAULT_URL"
   curl $URL/modules/ruby.sh | bash
 else
   curl $URL/modules/ruby.sh | bash
