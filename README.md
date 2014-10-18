@@ -3,7 +3,7 @@
 ## Usage
 
 1. Run setup process
-2. Install either individual modules or a full environment
+2. Install either (1) individual modules or (2) a full environment
 
 > Tested on Ubuntu 14.04 x64
 
