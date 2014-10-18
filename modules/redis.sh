@@ -18,7 +18,6 @@ cd redis-2.8.17
 make
 sudo make install
 cd utils
-# sudo ./install_server.sh
 
 #///////////////////////
 #// Startup
