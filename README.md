@@ -6,7 +6,7 @@
 
 ```shell
 $ sudo apt-get update
-$ sudo apt-get install curl git
+$ sudo apt-get --assume-yes install curl git build-essential tcl8.5
 ```
 
 ### Modules
