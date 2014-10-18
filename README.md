@@ -9,7 +9,9 @@ $ sudo apt-get install curl git
 
 ### Individual Modules
 
+```shell
 $ curl https://raw.githubusercontent.com/kylesuss/ubuntu-bootstrap/master/modules/<MODULE NAME>.sh | bash
+```
 
 ### Specific Environments
 
