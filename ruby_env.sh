@@ -37,11 +37,6 @@ do
       shift
     ;;
 
-    (*)
-      echo "Unknown argument passed. See https://github.com/kylesuss/ubuntu-bootstrap for valid arguments."
-      exit 1
-    ;;
-
   esac
 done
 
