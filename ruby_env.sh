@@ -54,5 +54,5 @@ fi
 
 if [ "$REDIS" = true ]
 then
-  curl $REDIS/modules/redis.sh | bash
+  curl $URL/modules/redis.sh | bash
 fi
