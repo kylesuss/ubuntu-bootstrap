@@ -49,12 +49,10 @@ then
   echo "A valid URL is required in order to dynamically load modules. See https://github.com/kylesuss/ubuntu-bootstrap for details."
   exit 1
 else
-  echo "Installing ruby..."
   curl $URL/modules/ruby.sh | bash
 fi
 
 if [ "$REDIS" = true ]
 then
-  echo "Installing redis..."
   curl $REDIS/modules/redis.sh | bash
 fi
