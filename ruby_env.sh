@@ -31,19 +31,23 @@ do
   esac
 done
 
-if [ "$URL" = "" ]
-then
-  URL="$DEFAULT_URL"
-  curl $URL/modules/ruby.sh | bash
-else
-  curl $URL/modules/ruby.sh | bash
-fi
+type ruby >/dev/null 2>&1 || {
+  if [ "$URL" = "" ]
+  then
+    URL="$DEFAULT_URL"
+    curl $URL/modules/ruby.sh | bash
+  else
+    curl $URL/modules/ruby.sh | bash
+  fi
+}
 
 #///////////////////////
 #// Conditional Loading
 #///////////////////////
 
-if [ "$REDIS" = true ]
-then
-  curl $URL/modules/redis.sh | bash
-fi
+type ruby >/dev/null 2>&1 || {
+  if [ "$REDIS" = true ]
+  then
+    curl $URL/modules/redis.sh | bash
+  fi
+}
