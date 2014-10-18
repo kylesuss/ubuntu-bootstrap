@@ -13,12 +13,12 @@ sudo apt-get --assume-yes install tcl8.5
 #///////////////////////
 
 wget http://download.redis.io/releases/redis-2.8.17.tar.gz
-tar xzf redis-2.8.9.tar.gz
-cd redis-2.8.9.tar.gz
+tar xzf redis-2.8.17.tar.gz
+cd redis-2.8.17
 make
 sudo make install
 cd utils
-sudo ./install_server.sh
+# sudo ./install_server.sh
 
 #///////////////////////
 #// Startup
