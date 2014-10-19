@@ -1,5 +1,7 @@
 ![Ubuntu Bootstrap](http://i.imgur.com/a5yWkkk.png)
 
+Bash scripts to bootstrap a fresh Ubuntu server w/ various tools.
+
 ## Usage
 
 1. Run setup process
@@ -17,7 +19,7 @@ $ sudo apt-get --assume-yes install curl git build-essential tcl8.5
 ### Available Modules
 - [x] ruby
 - [x] redis
-- [ ] postgres
+- [x] postgres
 - [ ] monit
 - [ ] nginx
 
