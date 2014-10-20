@@ -6,7 +6,7 @@ Bash scripts to bootstrap a fresh Ubuntu server w/ various tools. The current fo
 - [x] ruby
 - [x] redis
 - [x] postgres
-- [ ] monit
+- [x] monit
 - [x] nginx
 
 ## Usage
