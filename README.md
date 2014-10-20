@@ -15,6 +15,12 @@ Bash scripts to bootstrap a fresh Ubuntu server w/ various tools.
 $ sudo apt-get update
 $ sudo apt-get --assume-yes install curl git build-essential tcl8.5
 ```
+Make sure `/etc/hosts` has an entry for the current `hostname` so that you can run various commands with `sudo`.
+
+```shell
+127.0.0.1 localhost
+127.0.0.1 HOSTNAME
+```
 
 ### Available Modules
 - [x] ruby

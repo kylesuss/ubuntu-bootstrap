@@ -24,3 +24,6 @@ fi
 # Get latest ruby
 rvm install ruby --latest
 gem install bundler
+
+# Reload the shell
+. ./.bash_profile && . ./.profile && . ./.bashrc
