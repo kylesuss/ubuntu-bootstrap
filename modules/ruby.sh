@@ -3,7 +3,7 @@
 echo "Installing ruby..."
 
 #///////////////////////
-#// Ruby
+#// RVM
 #///////////////////////
 
 \curl -sSL https://get.rvm.io | bash -s stable
@@ -20,6 +20,10 @@ then
 else
   source "$HOME/.rvm/scripts/rvm"
 fi
+
+#///////////////////////
+#// Ruby
+#///////////////////////
 
 # Get latest ruby
 rvm install ruby --latest

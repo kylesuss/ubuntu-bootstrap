@@ -7,12 +7,12 @@ echo "Installing nginx..."
 #///////////////////////
 
 nginx=stable
-add-apt-repository ppa:nginx/$nginx
+sudo add-apt-repository ppa:nginx/$nginx
 sudo apt-get update
 sudo apt-get --assume-yes install nginx
 
 #///////////////////////
-#// Configuration
+#// Config
 #///////////////////////
 
 sudo service nginx start

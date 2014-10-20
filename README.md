@@ -1,6 +1,13 @@
 ![Ubuntu Bootstrap](http://i.imgur.com/a5yWkkk.png)
 
-Bash scripts to bootstrap a fresh Ubuntu server w/ various tools.
+Bash scripts to bootstrap a fresh Ubuntu server w/ various tools. The current focus is on a Ruby environment.
+
+### Available Modules
+- [x] ruby
+- [x] redis
+- [x] postgres
+- [ ] monit
+- [x] nginx
 
 ## Usage
 
@@ -21,13 +28,11 @@ Make sure `/etc/hosts` has an entry for the current `hostname` so that you can r
 127.0.0.1 localhost
 127.0.0.1 HOSTNAME
 ```
+You must reboot the machine after editing this file.
 
-### Available Modules
-- [x] ruby
-- [x] redis
-- [x] postgres
-- [ ] monit
-- [x] nginx
+```shell
+sudo reboot
+```
 
 ### Installation
 

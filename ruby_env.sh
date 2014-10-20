@@ -41,6 +41,10 @@ do
   esac
 done
 
+#///////////////////////
+#// Get Ruby by Default
+#///////////////////////
+
 type ruby >/dev/null 2>&1 || {
   if [ "$URL" = "" ]
   then
@@ -52,7 +56,7 @@ type ruby >/dev/null 2>&1 || {
 }
 
 #///////////////////////
-#// Conditional Loading
+#// Conditional Module Installation
 #///////////////////////
 
 type ruby >/dev/null 2>&1 || {
