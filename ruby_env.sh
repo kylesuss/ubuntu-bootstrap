@@ -33,6 +33,11 @@ do
       shift
     ;;
 
+    (--nginx)
+      NGINX=true
+      shift
+    ;;
+
   esac
 done
 
@@ -61,5 +66,12 @@ type psql >/dev/null 2>&1 || {
   if [ "$POSTGRES" = true ]
   then
     curl $URL/modules/postgres.sh | bash
+  fi
+}
+
+type nginx >/dev/null 2>&1 || {
+  if [ "$NGINX" = true ]
+  then
+    curl $URL/modules/nginx.sh | bash
   fi
 }
