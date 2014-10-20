@@ -21,7 +21,7 @@ $ sudo apt-get --assume-yes install curl git build-essential tcl8.5
 - [x] redis
 - [x] postgres
 - [ ] monit
-- [ ] nginx
+- [x] nginx
 
 ### Installation
 
