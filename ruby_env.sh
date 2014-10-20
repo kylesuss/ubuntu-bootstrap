@@ -28,6 +28,11 @@ do
       shift
     ;;
 
+    (--postgres)
+      POSTGRES=true
+      shift
+    ;;
+
   esac
 done
 
@@ -49,5 +54,12 @@ type ruby >/dev/null 2>&1 || {
   if [ "$REDIS" = true ]
   then
     curl $URL/modules/redis.sh | bash
+  fi
+}
+
+type psql >/dev/null 2>&1 || {
+  if [ "$POSTGRES" = true ]
+  then
+    curl $URL/modules/postgres.sh | bash
   fi
 }
